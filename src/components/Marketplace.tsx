@@ -5,7 +5,7 @@ import { Input } from './ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Badge } from './ui/badge';
 import { ShoppingCart, Eye, Filter, Search } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Listing, User } from '../App';
 
 interface MarketplaceProps {
@@ -126,7 +126,7 @@ export function Marketplace({ listings, user }: MarketplaceProps) {
         <div className="flex items-center space-x-2">
           <span className="text-sm text-gray-500">Total Value:</span>
           <span className="text-lg font-semibold text-green-600">
-            ${filteredListings.reduce((sum, listing) => sum + listing.price, 0).toLocaleString()}
+            ₹{filteredListings.reduce((sum, listing) => sum + listing.price, 0).toLocaleString()}
           </span>
         </div>
       </div>
@@ -165,7 +165,7 @@ export function Marketplace({ listings, user }: MarketplaceProps) {
                     <div className="flex justify-between">
                       <span className="text-sm text-gray-600">Price:</span>
                       <span className="text-lg font-bold text-green-600">
-                        ${listing.price.toLocaleString()}
+                        ₹{listing.price.toLocaleString()}
                       </span>
                     </div>
                   </div>
@@ -229,7 +229,7 @@ export function Marketplace({ listings, user }: MarketplaceProps) {
                           {expiry.text}
                         </td>
                         <td className="p-4 font-bold text-green-600">
-                          ${listing.price.toLocaleString()}
+                          ₹{listing.price.toLocaleString()}
                         </td>
                         <td className="p-4">
                           <div className="flex space-x-2">

@@ -96,7 +96,7 @@ export function SellerDashboard({ user }: SellerDashboardProps) {
             <DollarSign className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-600">$847,200</div>
+            <div className="text-2xl font-bold text-green-600">₹8,47,200</div>
             <p className="text-xs text-muted-foreground">
               <span className="text-green-600">+12%</span> from last month
             </p>
@@ -135,7 +135,7 @@ export function SellerDashboard({ user }: SellerDashboardProps) {
             <Brain className="h-4 w-4 text-purple-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-purple-600">$43,500</div>
+            <div className="text-2xl font-bold text-purple-600">₹43,500</div>
             <p className="text-xs text-muted-foreground">
               Next quarter forecast
             </p>
@@ -182,7 +182,7 @@ export function SellerDashboard({ user }: SellerDashboardProps) {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="month" />
                       <YAxis />
-                      <Tooltip formatter={(value) => [`$${value.toLocaleString()}`, 'Predicted Surplus']} />
+                      <Tooltip formatter={(value) => [`₹${value.toLocaleString()}`, 'Predicted Surplus']} />
                       <Line 
                         type="monotone" 
                         dataKey="value" 
@@ -304,7 +304,7 @@ export function SellerDashboard({ user }: SellerDashboardProps) {
                     <div>
                       <h4 className="font-medium">{opt.material}</h4>
                       <p className="text-sm text-gray-600">
-                        Current: ${opt.currentPrice.toLocaleString()} → Suggested: ${opt.suggestedPrice.toLocaleString()}
+                        Current: ${opt.currentPrice.toLocaleString()} → Suggested: ₹{opt.suggestedPrice.toLocaleString()}
                       </p>
                     </div>
                     <div className="text-right">

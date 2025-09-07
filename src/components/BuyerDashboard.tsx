@@ -109,7 +109,7 @@ export function BuyerDashboard({ user }: BuyerDashboardProps) {
             <TrendingDown className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-600">$26,200</div>
+            <div className="text-2xl font-bold text-green-600">₹26,200</div>
             <p className="text-xs text-muted-foreground">
               <span className="text-green-600">35%</span> vs market price
             </p>
@@ -135,7 +135,7 @@ export function BuyerDashboard({ user }: BuyerDashboardProps) {
             <DollarSign className="h-4 w-4 text-purple-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-purple-600">$4,850</div>
+            <div className="text-2xl font-bold text-purple-600">₹4,850</div>
             <p className="text-xs text-muted-foreground">
               5 items ready to checkout
             </p>
@@ -162,7 +162,7 @@ export function BuyerDashboard({ user }: BuyerDashboardProps) {
                     <XAxis dataKey="month" />
                     <YAxis />
                     <Tooltip formatter={(value, name) => [
-                      `$${value.toLocaleString()}`, 
+                      `₹${value.toLocaleString()}`, 
                       name === 'spent' ? 'Total Spent' : 'Money Saved'
                     ]} />
                     <Line 
@@ -215,7 +215,7 @@ export function BuyerDashboard({ user }: BuyerDashboardProps) {
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="font-semibold text-lg">${item.price.toLocaleString()}</div>
+                      <div className="font-semibold text-lg">₹{item.price.toLocaleString()}</div>
                       <div className="flex space-x-2">
                         <Button size="sm" variant="outline">
                           <Eye className="w-3 h-3" />
@@ -346,7 +346,7 @@ export function BuyerDashboard({ user }: BuyerDashboardProps) {
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="font-semibold">${order.amount.toLocaleString()}</div>
+                  <div className="font-semibold">₹{order.amount.toLocaleString()}</div>
                   <Button size="sm" variant="outline" className="mt-1">
                     Track
                   </Button>

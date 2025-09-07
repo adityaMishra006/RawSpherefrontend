@@ -60,7 +60,7 @@ const impactStats = [
   },
   {
     icon: DollarSign,
-    stat: '$2.5M+',
+    stat: '₹2.5Cr+',
     label: 'New Revenue from Surplus',
     color: 'text-blue-600',
     bgColor: 'bg-blue-50'
@@ -277,7 +277,7 @@ export function LandingPage({ onGetStarted }: LandingPageProps) {
                   
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-white p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-green-600">$43.5K</div>
+                      <div className="text-2xl font-bold text-green-600">₹43.5K</div>
                       <div className="text-sm text-gray-600">Surplus Predicted</div>
                     </div>
                     <div className="bg-white p-4 rounded-lg">

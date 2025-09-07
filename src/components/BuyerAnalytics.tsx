@@ -156,7 +156,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
             <DollarSign className="h-4 w-4 text-blue-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-blue-600">$312,000</div>
+            <div className="text-2xl font-bold text-blue-600">₹3,12,000</div>
             <div className="flex items-center text-xs text-green-600">
               <TrendingUp className="w-3 h-3 mr-1" />
               +18.2% from last year
@@ -170,7 +170,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
             <TrendingDown className="h-4 w-4 text-green-600" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-green-600">$87,000</div>
+            <div className="text-2xl font-bold text-green-600">₹87,000</div>
             <div className="flex items-center text-xs text-green-600">
               <TrendingUp className="w-3 h-3 mr-1" />
               35% vs market price
@@ -224,7 +224,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
                 <YAxis />
                 <Tooltip formatter={(value, name) => {
                   if (name === 'orders') return [value, 'Orders'];
-                  return [`$${value.toLocaleString()}`, name === 'spent' ? 'Amount Spent' : 'Money Saved'];
+                  return [`₹${value.toLocaleString()}`, name === 'spent' ? 'Amount Spent' : 'Money Saved'];
                 }} />
                 <Line 
                   type="monotone" 
@@ -321,7 +321,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis type="number" />
                   <YAxis dataKey="comparison" type="category" width={100} />
-                  <Tooltip formatter={(value) => [`$${value.toLocaleString()}`, 'Amount']} />
+                  <Tooltip formatter={(value) => [`₹${value.toLocaleString()}`, 'Amount']} />
                   <Bar dataKey="value" fill="#3B82F6" radius={[0, 4, 4, 0]} />
                 </BarChart>
               </ResponsiveContainer>
@@ -364,7 +364,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
                   <div>
                     <span className="text-gray-600">Total Spent:</span>
                     <div className="font-bold text-blue-600">
-                      ${category.spent.toLocaleString()}
+                      ₹{category.spent.toLocaleString()}
                     </div>
                   </div>
                   <div>
@@ -416,7 +416,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
                       <span className="font-semibold">{supplier.rating}</span>
                     </div>
                     <div className="text-sm text-green-600">
-                      ${supplier.savings.toLocaleString()} saved
+                      ₹{supplier.savings.toLocaleString()} saved
                     </div>
                   </div>
                 </div>
@@ -487,7 +487,7 @@ export function BuyerAnalytics({ user }: BuyerAnalyticsProps) {
               <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-2">
                 <DollarSign className="w-5 h-5 text-white" />
               </div>
-              <div className="text-xl font-bold text-blue-600">$87K</div>
+              <div className="text-xl font-bold text-blue-600">₹87K</div>
               <div className="text-sm text-gray-600">Cost Savings</div>
             </div>
             

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -6,7 +6,7 @@ import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Upload, FileText, Check } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Listing } from '../App';
 
 interface AddListingProps {
@@ -247,7 +247,7 @@ export function AddListing({ onAddListing }: AddListingProps) {
                   <div className="flex justify-between">
                     <span className="text-gray-600">Price:</span>
                     <span className="font-bold text-green-600">
-                      {formData.price ? `$${parseFloat(formData.price).toLocaleString()}` : '-'}
+                      {formData.price ? `₹s${parseFloat(formData.price).toLocaleString()}` : '-'}
                     </span>
                   </div>
                 </div>

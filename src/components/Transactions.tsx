@@ -74,7 +74,7 @@ export function Transactions({ transactions, user }: TransactionsProps) {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-green-600">
-              ${totalValue.toLocaleString()}
+              ₹{totalValue.toLocaleString()}
             </div>
             <p className="text-xs text-muted-foreground">
               Last 30 days
@@ -166,7 +166,7 @@ export function Transactions({ transactions, user }: TransactionsProps) {
                       {new Date(transaction.date).toLocaleDateString()}
                     </td>
                     <td className="p-4 font-bold text-green-600">
-                      ${transaction.amount.toLocaleString()}
+                      ₹{transaction.amount.toLocaleString()}
                     </td>
                     <td className="p-4">
                       <Badge 
@@ -218,7 +218,7 @@ export function Transactions({ transactions, user }: TransactionsProps) {
                                     <div className="flex justify-between">
                                       <span className="text-gray-600">Amount:</span>
                                       <span className="font-bold text-green-600">
-                                        ${selectedTransaction.amount.toLocaleString()}
+                                        ₹{selectedTransaction.amount.toLocaleString()}
                                       </span>
                                     </div>
                                   </div>

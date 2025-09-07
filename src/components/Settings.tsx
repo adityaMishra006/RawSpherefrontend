@@ -19,7 +19,7 @@ import {
   Camera,
   Save
 } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { User } from '../App';
 
 interface SettingsProps {
@@ -458,7 +458,7 @@ export function Settings({ user }: SettingsProps) {
                   <p className="text-sm text-green-700">Unlimited listings and advanced analytics</p>
                 </div>
                 <div className="text-right">
-                  <div className="text-lg font-bold text-green-900">$99/month</div>
+                  <div className="text-lg font-bold text-green-900">₹10,000/month</div>
                   <Badge variant="default" className="bg-green-100 text-green-800">Active</Badge>
                 </div>
               </div>
@@ -485,9 +485,9 @@ export function Settings({ user }: SettingsProps) {
                 <h4 className="font-medium">Billing History</h4>
                 <div className="space-y-2">
                   {[
-                    { date: '2024-12-01', amount: '$99.00', status: 'Paid' },
-                    { date: '2024-11-01', amount: '$99.00', status: 'Paid' },
-                    { date: '2024-10-01', amount: '$99.00', status: 'Paid' }
+                    { date: '2024-12-01', amount: '₹10,000.00', status: 'Paid' },
+                    { date: '2024-11-01', amount: '₹10,000.00', status: 'Paid' },
+                    { date: '2024-10-01', amount: '₹10,000.00', status: 'Paid' }
                   ].map((invoice, index) => (
                     <div key={index} className="flex items-center justify-between p-3 border rounded">
                       <div>
